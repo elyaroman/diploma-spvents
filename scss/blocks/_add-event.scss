@@ -1,0 +1,161 @@
+.add-event {
+  padding: 160px 0 80px;
+
+  &__wrapper {
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 4px $color-raisin-black-20;
+    padding: 40px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 16px;
+  }
+
+  &__header {
+    background-color: $color-saffron;
+    padding: 40px;
+    border-radius: 20px;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  &__main {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-grow: 1;
+    gap: 20px;
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__top {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__headline {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    gap: 4px;
+    color: $color-watermelon-red;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-indigo;
+    }
+  }
+
+  &__headline-text {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+  }
+
+  &__name {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-raisin-black;
+    margin: 0;
+
+    &::placeholder {
+      color: $color-raisin-black;
+    }
+  }
+
+  &__description {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-watermelon-red;
+    margin: 0;
+
+    &::placeholder {
+      color: $color-watermelon-red;
+    }
+  }
+
+&__icons {
+  display: flex;
+  gap: 16px;
+}
+
+&__btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 9px;
+  background-color: $color-cultered;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color $transition-300;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-watermelon-red;
+  }
+}
+
+&__icon {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+&__details {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+
+&__group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+&__subtitle {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+&__row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+&__btn-wrapper {
+  display: flex;
+  gap: 40px;
+}
+}

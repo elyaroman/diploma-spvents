@@ -1,0 +1,71 @@
+.btn {
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: $color-cultered;
+  color: $color-raisin-black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  transition: background-color $transition-300, color $transition-300;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-indigo;
+    color: $color-cultered;
+  }
+
+  &--secondary {
+    flex-grow: 1;
+    background-color: $color-saffron;
+  }
+
+  &--m {
+    width: 280px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    @include vp-1023 {
+      padding: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &--xl {
+    width: 370px;
+
+    @include vp-1023 {
+      width: 300px;
+    }
+  }
+
+  &--indigo {
+    background-color: $color-indigo;
+    color: $color-cultered;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-watermelon-red;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+
+    &--reverse {
+      transform: scale(-1, -1);
+    }
+  }
+}

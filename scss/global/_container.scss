@@ -1,0 +1,11 @@
+.container {
+  max-width: 1380px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include vp-1023 {
+    padding: 0 20px;
+  }
+}
+

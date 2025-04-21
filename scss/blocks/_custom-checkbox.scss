@@ -1,0 +1,58 @@
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__field:checked + &__label::before {
+    background-color: $color-raisin-black;
+    border-color: $color-raisin-black;
+  }
+
+  &__field:checked ~ &__icon {
+    color: $color-cultered;
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 28px;
+    user-select: none;
+
+    @include vp-1023 {
+      font-size: 14px;
+    }
+  }
+
+  &__label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $color-cultered;
+    border: 1px solid $color-light-slate-grey;
+    border-radius: 4px;
+    transition: border-color $transition-300, background-color $transition-300;
+  }
+
+  &__label:hover:before,
+  &__label:focus-visible:before {
+    border-color: $color-saffron;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    color: $color-light-slate-grey;
+    transition: color $transition-300;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &__label:hover + &__icon,
+  &__label:focus-visible + &__icon {
+    color: $color-saffron;
+  }
+}

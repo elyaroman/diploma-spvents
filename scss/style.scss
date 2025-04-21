@@ -1,0 +1,26 @@
+// global
+
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+// blocks
+
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_events";
+@import "blocks/_events-search-form";
+@import "blocks/_event-card";
+@import "blocks/_create-events";
+@import "blocks/_custom-input";
+@import "blocks/_custom-select";
+@import "blocks/_custom-checkbox";
+@import "blocks/_btn";
+@import "blocks/_add-event";
+@import "blocks/_account";
+@import "blocks/_handmade-event-form";
+@import "blocks/_footer";

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>Страница личного кабинета</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
+          <svg class="header__logo-icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo"></use>
+          </svg>
+          <span class="header__logo-name">spvents</span>
+        </a>
+        <div class="header__icons">
+          <a class="header__link" href="#" aria-label="Открыть Избранное">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+            </svg>
+          </a>
+          <a href="#" class="header__link" aria-label="Открыть Уведомления">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-notification"></use>
+            </svg>
+          </a>
+          <a class="header__link" href="account.html" aria-label="Открыть страницу личного кабинета">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-account"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="account">
+      <div class="container">
+        <h1 class="visually-hidden">Страница личного кабинета</h1>
+        <div class="account__wrapper">
+          <div class="account__events">
+            <div class="account__event-search">
+              <h2 class="account__title">Мероприятия</h2>
+              <form class="handmade-events-form" action="#" method="POST">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="handmade-events" id="handmade-events"
+                    placeholder="Искать мероприятия">
+                  <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </div>
+                <button class="handmade-events-form__btn" type="submit"
+                  aria-label="Найти созданные мероприятия">+</button>
+              </form>
+              <span class="account__events-count">Найдено 4&nbsp;мероприятия</span>
+            </div>
+            <ul class="account__event-list">
+              <li class="account__event">
+                <a class="account__event-link" href="#">
+                  <span class="account__event-name">Выступление фокусников</span>
+                  <span class="account__event-date">5&nbsp;апреля 2025</span>
+                </a>
+              </li>
+              <li class="account__event">
+                <a class="account__event-link">
+                  <span class="account__event-name">Художественный мастер-класс</span>
+                  <span class="account__event-date">6&nbsp;апреля 2025</span>
+                </a>
+              </li>
+              <li class="account__event">
+                <a class="account__event-link">
+                  <span class="account__event-name">Лекция о&nbsp;истории кино</span>
+                  <span class="account__event-date">12&nbsp;апреля 2025</span>
+                </a>
+              </li>
+              <li class="account__event">
+                <a class="account__event-link">
+                  <span class="account__event-name">Совместные чтения</span>
+                  <span class="account__event-date">13&nbsp;апреля 2025</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="account__block">
+            <div class="account__img">
+              <img class="account__photo" src="images/account/account.jpg" alt="Фото профиля" width="280" height="280">
+              <div class="account__img-icons">
+                <button class="account__btn" type="button" aria-label="Добавить фото профиля">
+                  <svg class="account__img-icon" width="14" height="14" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-add"></use>
+                  </svg>
+                </button>
+                <button class="account__btn" type="button" aria-label="Изменить фото профиля">
+                  <svg class="account__img-icon" width="14" height="14" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-edit"></use>
+                  </svg>
+                </button>
+                <button class="account__btn" type="button" aria-label="Удалить фото профиля">
+                  <svg class="account__img-icon" width="14" height="14" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="account__right">
+              <div class="account__top">
+                <button class="account__info" type="button" aria-label="Изменить дату рождения">
+                  <svg class="account__info-icon" width="12" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-calendar"></use>
+                  </svg>
+                  <span class="account__info-text">9.03.1992</span>
+                </button>
+                <button class="account__info" type="button" aria-label="Изменить район">
+                  <svg class="account__info-icon" width="12" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-map"></use>
+                  </svg>
+                  <span class="account__info-text">Петроградский район</span>
+                </button>
+              </div>
+              <h1 class="account__name">Иванов Иван</h1>
+              <p class="account__description">Живу в&nbsp;Санкт-Петербурге уже не&nbsp;первый год, но&nbsp;только
+                сейчас стал активно гулять по&nbsp;городу и&nbsp;посещать мероприятия.</p>
+              <div class="account__links">
+                <a class="account__link" href="#">ИЗБРАННЫЕ МЕРОПРИЯТИЯ</a>
+                <a class="account__link" href="#">УВЕДОМЛЕНИЯ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__top">
+          <div class="footer__info">
+            <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу">
+              <svg class="footer__logo-icon" width="27" height="27" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-logo"></use>
+              </svg>
+              <span class="footer__logo-name">spvents</span>
+            </a>
+            <p class="footer__description">Добро пожаловать на&nbsp;наш сайт-агрегатор бесплатных мероприятий
+              в&nbsp;Санкт-Петербурге! Присоединяйтесь к&nbsp;нам и&nbsp;открывайте новые возможности для досуга!</p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-col">
+              <h2 class="footer__title">Организаторам</h2>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Правила размещения</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Часто задаваемые вопросы</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Статистика</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Обратная связь</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h2 class="footer__title">spvents</h2>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">О&nbsp;нас</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Контакты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Справка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Правовая информация</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__subscription">
+            <h2 class="footer__title">Рассылка</h2>
+            <p class="footer__subscription-text">Укажите свой адрес электронной почты, чтобы оставататься в&nbsp;курсе
+              событий!</p>
+            <form class="subscription-form" action="#" method="POST">
+              <div class="custom-input">
+                <input class="custom-input__field" type="email" name="email" id="email"
+                  placeholder="Введите адрес почты...">
+                <button class="custom-input__btn" type="button" aria-label="Подписаться на рассылку">
+                  <svg class="custom-input__btn-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copyright">Copyright &copy;&nbsp;2025 ElyaRoman</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

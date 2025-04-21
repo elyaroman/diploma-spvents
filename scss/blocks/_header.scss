@@ -1,0 +1,77 @@
+.header {
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $color-raisin-black;
+    outline: none;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-saffron;
+  }
+  }
+
+  &__logo-icon {
+    width: 40px;
+    height: 40px;
+
+    @include vp-1023 {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__logo-name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 34px;
+
+    @include vp-1023 {
+      gap: 20px;
+    }
+  }
+
+  &__link {
+    color: $color-raisin-black;
+    outline: none;
+    transition: color $transition-300;
+    display: flex;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-saffron;
+    }
+  }
+
+  &__icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+
+    @include vp-1023 {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

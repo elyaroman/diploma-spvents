@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>Страница личного кабинета</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
+          <svg class="header__logo-icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo"></use>
+          </svg>
+          <span class="header__logo-name">spvents</span>
+        </a>
+        <div class="header__icons">
+          <a class="header__link" href="#" aria-label="Открыть Избранное">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+            </svg>
+          </a>
+          <a href="#" class="header__link" aria-label="Открыть Уведомления">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-notification"></use>
+            </svg>
+          </a>
+          <a class="header__link" href="account.html" aria-label="Открыть страницу личного кабинета">
+            <svg class="header__icon" width="34" height="34" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-account"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="add-event">
+      <div class="container">
+        <div class="add-event__wrapper">
+          <h1 class="add-event__title">Добавить новое мероприятие</h1>
+          <form class="add-event__form" action="#" method="POST">
+            <div class="add-event__header">
+              <div class="add-event__main">
+                <div class="add-event__info">
+                  <div class="add-event__top">
+                    <button class="add-event__headline" type="button" aria-label="Выбрать дату">
+                      <svg class="add-event__headline-icon" width="12" height="12" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-calendar"></use>
+                      </svg>
+                      <span class="add-event__headline-text">Выбрать дату</span>
+                    </button>
+                    <button class="add-event__headline" type="button" aria-label="Выбрать место">
+                      <svg class="add-event__headline-icon" width="12" height="12" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-map"></use>
+                      </svg>
+                      <span class="add-event__headline-text">Выбрать место</span>
+                    </button>
+                  </div>
+                  <input class="add-event__name" type="text" name="event-name" id="event-name" placeholder="Название мероприятия">
+                  <input class="add-event__description" type="text" name="event-description" id="event-description" placeholder="Короткое описание мероприятия">
+                </div>
+                <div class="add-event__icons">
+                  <button class="add-event__btn" type="button" aria-label="Добавить фото профиля">
+                    <svg class="add-event__icon" width="14" height="14" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-add"></use>
+                    </svg>
+                  </button>
+                  <button class="add-event__btn" type="button" aria-label="Изменить фото профиля">
+                    <svg class="add-event__icon" width="14" height="14" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-edit"></use>
+                    </svg>
+                  </button>
+                  <button class="add-event__btn" type="button" aria-label="Удалить фото профиля">
+                    <svg class="add-event__icon" width="14" height="14" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-delete"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="add-event__details">
+              <div class="add-event__group">
+                <h3 class="add-event__subtitle">ДЕТАЛИ МЕРОПРИЯТИЯ</h3>
+                <div class="add-event__row">
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="event-start" id="event-start"
+                      placeholder="Время начала">
+                    <label class="custom-input__label" for="event-start">Время начала</label>
+                    <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-clock"></use>
+                    </svg>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="event-end" id="event-end"
+                      placeholder="Время окончания">
+                    <label class="custom-input__label" for="event-end">Время окончания</label>
+                    <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-clock"></use>
+                    </svg>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="duration" id="duration"
+                      placeholder="Длительность">
+                    <label class="custom-input__label" for="duration">Длительность</label>
+                  </div>
+                </div>
+              </div>
+              <div class="add-event__row">
+                <div class="custom-select">
+                  <select class="custom-select__field" name="organizer" id="organizer">
+                    <option value="">Выберите организатора</option>
+                    <option value="exibition">Выставка</option>
+                    <option value="lection">Лекция</option>
+                    <option value="concert">Концерт</option>
+                    <option value="show">Шоу</option>
+                  </select>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="organizer-checkbox"
+                    id="organizer-checkbox">
+                  <label class="custom-checkbox__label" for="organizer-checkbox">Вы&nbsp;&mdash; организатор</label>
+                  <svg class="custom-checkbox__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tick"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="add-event__row">
+                <div class="custom-select">
+                  <select class="custom-select__field" name="events-type" id="events-type">
+                    <option value="">Выберите тип мероприятия</option>
+                    <option value="exibition">Выставка</option>
+                    <option value="lection">Лекция</option>
+                    <option value="concert">Концерт</option>
+                    <option value="show">Шоу</option>
+                  </select>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="child-friendly"
+                    id="child-friendly">
+                  <label class="custom-checkbox__label" for="child-friendly">Можно с&nbsp;детьми</label>
+                  <svg class="custom-checkbox__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tick"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="add-event__group">
+                <h3 class="add-event__subtitle">АДРЕС МЕРОПРИЯТИЯ</h3>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="event-address" id="event-address"
+                    placeholder="Введите адрес">
+                </div>
+              </div>
+              <div class="add-event__btn-wrapper">
+                <a class="btn" href="index.html">
+                  <svg class="btn__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                  <span class="btn__text">Вернуться</span>
+                </a>
+                <button class="btn btn--secondary" type="submit">
+                  <svg class="btn__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <span class="btn__text">Создать новое мероприятие</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__top">
+          <div class="footer__info">
+            <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу">
+              <svg class="footer__logo-icon" width="27" height="27" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-logo"></use>
+              </svg>
+              <span class="footer__logo-name">spvents</span>
+            </a>
+            <p class="footer__description">Добро пожаловать на&nbsp;наш сайт-агрегатор бесплатных мероприятий
+              в&nbsp;Санкт-Петербурге! Присоединяйтесь к&nbsp;нам и&nbsp;открывайте новые возможности для досуга!</p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-col">
+              <h2 class="footer__title">Организаторам</h2>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Правила размещения</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Часто задаваемые вопросы</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Статистика</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Обратная связь</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h2 class="footer__title">spvents</h2>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">О&nbsp;нас</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Контакты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Справка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__link" href="#">Правовая информация</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__subscription">
+            <h2 class="footer__title">Рассылка</h2>
+            <p class="footer__subscription-text">Укажите свой адрес электронной почты, чтобы оставататься в&nbsp;курсе
+              событий!</p>
+            <form class="subscription" action="#" method="POST">
+              <div class="custom-input">
+                <input class="custom-input__field" type="email" name="email" id="email"
+                  placeholder="Введите адрес почты...">
+                <button class="custom-input__btn" type="button" aria-label="Подписаться на рассылку">
+                  <svg class="custom-input__btn-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copyright">Copyright &copy;&nbsp;2025 ElyaRoman</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

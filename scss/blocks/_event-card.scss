@@ -1,0 +1,78 @@
+.event-card {
+  box-shadow: 2px 2px 20px 0px rgba(119, 115, 170, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  outline: none;
+  $root: &;
+
+  &:hover,
+  &:focus-visible {
+    #{$root}__img {
+      transform: scale(1.1);
+    }
+
+    #{$root}__name, 
+    #{$root}__date {
+      color: $color-watermelon-red;
+    }
+  }
+
+  &__pic {
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 340px;
+    height: 200px;
+    transition: transform $transition-300;
+
+    @include vp-1023 {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 12px;
+    color: $color-light-slate-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color $transition-300;
+  }
+
+  &__date-number {
+    font-size: 28px;
+    color: $color-raisin-black;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    transition: color $transition-300;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $color-light-slate-grey;
+    margin: 0;
+  }
+}

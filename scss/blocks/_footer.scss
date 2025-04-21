@@ -1,0 +1,130 @@
+.footer {
+  padding: 40px 0;
+  background-color: $color-saffron;
+
+  &__wrapper {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-bottom: 1px solid $color-raisin-black;
+    padding-bottom: 39px;
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 400px;
+
+    @include vp-767 {
+      max-width: none;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: $color-raisin-black;
+    outline: none;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-watermelon-red;
+    }
+  }
+
+  &__logo-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  &__logo-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 40px;
+
+    @include vp-767 {
+      justify-content: space-between;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.5;
+    outline: none;
+    transition: color $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-watermelon-red;
+    }
+  }
+
+  &__subscription {
+    max-width: 400px;
+
+    @include vp-767 {
+      max-width: none;
+    }
+  }
+
+  &__subscription-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 40px;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

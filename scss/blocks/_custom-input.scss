@@ -1,0 +1,120 @@
+.custom-input {
+  position: relative;
+  width: 100%;
+  $root: &;
+
+  &--search {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    color: $color-cultered;
+
+    #{$root}__label {
+      font-size: 16px;
+      line-height: 16px;
+      color: $color-cultered;
+      position: static;
+      opacity: 1;
+      background-color: $color-indigo;
+
+      @include vp-767 {
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    #{$root}__field {
+      background-color: $color-indigo;
+      border: none;
+      border-bottom: 1px solid $color-cultered;
+      border-radius: 0;
+      padding: 11px 4px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      color: $color-cultered;
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 7px 4px;
+      }
+    }
+  }
+
+  &__field {
+    width: 100%;
+    border: 1px solid $color-light-slate-grey;
+    border-radius: 8px;
+    padding: 11px;
+    outline: none;
+    font-size: 16px;
+    color: $color-raisin-black;
+    transition: border-color $transition-300;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    &::placeholder {
+      color: $color-light-slate-grey;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-saffron;
+    }
+  }
+
+  &__field:hover + &__label,
+  &__field:focus-visible + &__label {
+    opacity: 1;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 12px;
+    user-select: none;
+    position: absolute;
+    top: -6px;
+    left: 8px;
+    padding: 0 4px;
+    background-color: $color-white;
+    opacity: 0;
+    transition: opacity $transition-300;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 12px;
+    bottom: 13px;
+    pointer-events: none;
+    color: $color-indigo;
+    transition: color $transition-300;
+  }
+
+  &__field:hover + &__icon,
+  &__field:focus-visible + &__icon {
+    color: $color-saffron;
+  }
+
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    color: $color-light-slate-grey;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-saffron;
+    }
+  }
+}
