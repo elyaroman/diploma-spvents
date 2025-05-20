@@ -1,0 +1,281 @@
+[
+  {
+    "date": "14 и 21 мая",
+    "place": "Дом учёных им. М. Горького",
+    "title": "Киносреда",
+    "description": "",
+    "ageLimit": "",
+    "image": "https://avatars.mds.yandex.net/get-afishanew/23114/d318911409471f283109445602bdbe60/s380x220",
+    "link": "https://afisha.yandex.ru/saint-petersburg/cinema_show/kinosreda-2023?source=rubric"
+  },
+  {
+    "date": "до 18 мая",
+    "place": "Севкабель Порт",
+    "title": "Идеальные формы и живая реальность",
+    "description": "",
+    "ageLimit": "",
+    "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/f430c4d010747e74f50bbd97bc034104/s380x220",
+    "link": "https://afisha.yandex.ru/saint-petersburg/art/idealnye-formy-i-zhivaia-realnost?source=rubric"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Станция метро «Чкаловская»",
+    "title": "Аудиоэкскурсия «Блокада на Петроградской стороне с Софьей Лурье» ",
+    "description": "Камерная экскурсия, которая оставит вас наедине с мыслями ленинградцев в осаждённом городе. Прогулка...",
+    "ageLimit": "18+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/ekskursiya-audioekskursiya-blokada-na-petrogradskoj-storone-s-sofej-lure/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Летний сад",
+    "title": "Цветочная экскурсия по Петербургу ",
+    "description": "ОТ ЛЕТНЕГО САДА ДО ЦВЕТОЧНОЙ ЛАВКИ НА ЧАЙКОВСКОГО. Прогулка длиной в пять километров откроет для вас множество удивительных фактов даже о знакомых местах. Вы...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/ekskursiya-tsvetochnaya-ekskursiya-ot-lavki-zelenogorsk/"
+  },
+  {
+    "date": "\n30 апреля – 25 мая весь день",
+    "place": "",
+    "title": "Открытие летнего туристического сезона в Петербурге ",
+    "description": "В Санкт-Петербурге стартует новый туристический сезон. Рассказываем, какие события и мероприятия стоит...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/otkryitie-letnego-turisticheskogo-sezona-v-peterburge/"
+  },
+  {
+    "date": "\n5 апреля – 17 мая ср–вс 12:00–20:00",
+    "place": "Галерея Art of Foto",
+    "title": "Выставка «Сквозь зелёные воды» ",
+    "description": "Выставка Елены Харитоновой раскрывает пейзаж как способ высказывания. В центре — весенние мотивы,...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-skvoz-zelyonyie-vodyi/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Творческое пространство «Глобус»",
+    "title": "Бесплатная йога в центре города",
+    "description": "Отличный шанс для тех, кто давно хотел, но постоянно откладывал свои занятия по йоге. Организаторы...",
+    "ageLimit": "",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/raznoe-besplatnaya-joga-v-tsentre/"
+  },
+  {
+    "date": "\n1 апреля – 15 мая вт–сб 12:00–20:00",
+    "place": "Арт-центр «Борей»",
+    "title": "Выставка «Небесная линия города на Неве» ",
+    "description": "Выставка включает фотографии и графические листы из частной коллекции, в которых художники по-разному...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-nebesnaya-liniya-goroda-na-neve/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Галерея Кустановича",
+    "title": "Выставка живописи Дмитрия Кустановича ",
+    "description": "В Галерее Кустановича в постоянном режиме работает выставка картин мастера пространственного реализма,...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-zhivopis-dmitriya-kustanovicha-167863/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Пышечная на Большой Конюшенной",
+    "title": "Аудиоэкскурсия «Тепло Ленинграда» ",
+    "description": "Бесплатная экскурсия, посвящённая культовому месту как Ленинграда, так и Петербурга, пышечной на Большой...",
+    "ageLimit": "18+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/ekskursiya-teplo-leningrada/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Музей Анны Ахматовой в Фонтанном доме",
+    "title": "Постоянная экспозиция Музея Анны Ахматовой «Иосиф Бродский. „Сохрани мою тень“» ",
+    "description": "На стене Фонтанного дома проступили «следы» Иосифа Бродского.",
+    "ageLimit": "12+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-iosif-brodskij-sohrani-moyu-ten/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Музей истории НИИ экспериментальной медицины",
+    "title": "Постоянная экспозиция Музея истории НИИ экспериментальной медицины",
+    "description": "Настоящая кладезь биологических и медицинских знаний, накопленных научно-исследовательским ИЭМ.",
+    "ageLimit": "",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/ekspoziciya-muzeya-nii-eksperimentalnoy-mediciny/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Музей кафедры патологической анатомии",
+    "title": "Постоянная экспозиция Музея кафедры патологической анатомии ",
+    "description": "Один из крупнейших музеев в Европе такого профиля — музей при Санкт-Петербургской Государственной Академии...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/ekspoziciya-muzeya-kafedry-patologicheskoi-anatomi/"
+  },
+  {
+    "date": "\n3–31 мая\nсмотреть расписание",
+    "place": "Библиотека им. К.А. Тимирязева",
+    "title": "Выставка «Изнанка Яви» ",
+    "description": "Фотопроект Анны Ардовой «Изнанка Яви» — это визуальный путь в глубины подсознания, где образы рождаются в...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-iznanka-yavi/"
+  },
+  {
+    "date": "\n1–31 мая 9:00–20:00",
+    "place": "Библиотека имени Герцена",
+    "title": "Выставка «Арт-калейдоскоп» ",
+    "description": "На выставке Василия Бертельса «Арт-калейдоскоп» зрителей ждёт яркое визуальное путешествие по многолетнему...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-art-kalejdoskop/"
+  },
+  {
+    "date": "\n26 апреля – 15 мая 9:00–20:00",
+    "place": "Библиотека «На Стремянной»",
+    "title": "Выставка «Не забыты. Образы и судьбы солдат Великой Отечественной войны» ",
+    "description": "Фотовыставка «Не забыты» — это проникновенный рассказ в фотографиях о судьбах солдат Великой Отечественной...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-ne-zabyityi-obrazyi-i-sudbyi-soldat-velikoj-otechestvennoj-vojnyi/"
+  },
+  {
+    "date": "\n22 апреля – 25 мая 9:00–20:00",
+    "place": "Библиотека «Екатерингофская»",
+    "title": "Выставка «Мадемуазель О» ",
+    "description": "Выставка «Мадемуазель О» предлагает погрузиться в тонкую атмосферу детства, памяти и набоковской прозы....",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-mademuazel-o/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Аэропорт Пулково",
+    "title": "Проект I Believe in Angels Дмитрия Шорина ",
+    "description": "В новом терминале аэропорта «Пулково» расположились четыре скульптуры из совместного проекта Эрарты и...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/proekt-i-believe-angels/"
+  },
+  {
+    "date": "\n3–31 мая 9:00–20:00",
+    "place": "Библиотека им. К.А. Тимирязева",
+    "title": "Выставка «Эстезис Обводного канала» ",
+    "description": "Фотовыставка «Эстезис Обводного канала» — это философский взгляд на индустриальный Петербург. В кадрах...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-estezis-obvodnogo-kanala/"
+  },
+  {
+    "date": "\n5–31 мая 9:00–20:00",
+    "place": "Библиотека «Семёновская»",
+    "title": "Выставка «Плакаты Победы» ",
+    "description": "Агитационный плакат времён Великой Отечественной войны — это голос эпохи.",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-plakatyi-pobedyi/"
+  },
+  {
+    "date": "\n29 апреля – 15 мая 12:00–20:00",
+    "place": "Библиотека имени Аркадия Гайдара",
+    "title": "Выставка «О чём писали газеты в 1945 году» ",
+    "description": "Выставка «О чём писали газеты в 1945 году» переносит зрителей в атмосферу военных лет. Оригинальные...",
+    "ageLimit": "12+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-o-chyom-pisali-gazetyi-v-1945-godu/"
+  },
+  {
+    "date": "\n14 мая 17:30–19:00",
+    "place": "Библиотека «Бронницкая»",
+    "title": "Мастер-класс «Ветка глицинии» ",
+    "description": "На мастер-классе по оригами участники создадут изящную закладку с веткой глицинии — символом весны и...",
+    "ageLimit": "12+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/master-klass-vetka-glitsinii/"
+  },
+  {
+    "date": "\n14 мая 17:00–18:30",
+    "place": "Библиотека Кировских островов",
+    "title": "Концерт «В чудесном городе Петровом!» ",
+    "description": "Музыкальный вечер в библиотеке Кировских островов — это признание в любви к городу на Неве. Петербургские...",
+    "ageLimit": "12+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/kontsert-v-chudesnom-gorode-petrovom/"
+  },
+  {
+    "date": "\n14 мая 19:30",
+    "place": "Государственная академическая капелла Санкт-Петербурга",
+    "title": "Трансляция концерта оркестра Белгородской филармонии ",
+    "description": "Симфония № 5 Бетховена прозвучит в исполнении белгородского оркестра в прямой трансляции на большом...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/translyatsiya-pyataya-simfoniya-bethovena/"
+  },
+  {
+    "date": "\n14 мая 19:00–21:00",
+    "place": "Библиотека «Лиговская»",
+    "title": "Встреча «Фотодом на Лиговском. Презентация книги „Она продолжается“» ",
+    "description": "Презентация книги «Она продолжается» — это встреча с автором и фотожурналисткой Алёной Кочетковой, чьи...",
+    "ageLimit": "18+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vstrecha-fotodom-na-ligovskom-prezentatsiya-knigi-ona-prodolzhaetsya/"
+  },
+  {
+    "date": "\n3–31 мая 9:00–20:00",
+    "place": "Библиотека «Семёновская»",
+    "title": "Выставка «Великая Отечественная» ",
+    "description": "Книжная выставка в библиотеке «Семёновская» помогает взглянуть на знакомую военную прозу по-новому.",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vyistavka-velikaya-otechestvennaya/"
+  },
+  {
+    "date": "\n14 мая 18:00–19:30",
+    "place": "Библиотека на Карповке",
+    "title": "Лекция «Византийские книжные памятники: от Мириобиблиона патриарха Фотия до придворных библиотек эпохи Анны Комнины» ",
+    "description": "Погрузитесь в изысканный мир византийских рукописей — от трактатов с миниатюрами до сокровищ придворных библиотек.",
+    "ageLimit": "12+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/lektsiya-vizantijskie-knizhnyie-pamyatniki-ot-miriobibliona-patriarha-fotiya-do-pridvornyih-bibliotek-epohi-annyi-komninyi/"
+  },
+  {
+    "date": "\nКруглый год",
+    "place": "Библиотека имени Маяковского в «Севкабель Порту»",
+    "title": "Программа для детей «Песочница» ",
+    "description": "Встречаемся, чтобы открыть новую классику для детей! Это возможность окунуться в мир современной...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/programma-dlya-detej-pesochnitsa/"
+  },
+  {
+    "date": "\n14 мая 18:30–20:00",
+    "place": "Библиотека «Измайловская»",
+    "title": "Лекция «В поисках идеального. Художник Чарльз Гибсон» ",
+    "description": "Лекция посвящена жизни и творчеству Чарльза Гибсона — автора легендарных «девушек Гибсона», ставших...",
+    "ageLimit": "0+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/lektsiya-v-poiskah-idealnogo-hudozhnik-charlz-gibson/"
+  },
+  {
+    "date": "\n14 мая 18:30–20:00",
+    "place": "Библиотека «Семёновская»",
+    "title": "Встреча «Не боимся погоды в природе!» ",
+    "description": "Можно ли не бояться холода и дождя? Как прогулки и походы помогают детям расти крепкими, а взрослым...",
+    "ageLimit": "6+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/vstrecha-ne-boimsya-pogodyi-v-prirode/"
+  },
+  {
+    "date": "\n14 мая 11:00–12:30",
+    "place": "Центральная библиотека имени Лермонтова",
+    "title": "Семинар «Отцы и дети» ",
+    "description": "Как восстановить отношения с ребёнком, если всё зашло в тупик? Семинар «Отцы и дети» — это возможность...",
+    "ageLimit": "18+",
+    "image": "images/event/event-default.jpg",
+    "link": "https://kudago.com/spb/event/seminar-ottsyi-i-deti/"
+  }
+]

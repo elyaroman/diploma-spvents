@@ -45,7 +45,7 @@
 
   &__top {
     display: flex;
-    gap: 32px;
+    // gap: 32px;
   }
 
   &__headline {
@@ -55,6 +55,7 @@
     padding: 0;
     background-color: transparent;
     display: flex;
+    align-items: center;
     gap: 4px;
     color: $color-watermelon-red;
     transition: color $transition-300;
@@ -65,10 +66,36 @@
     }
   }
 
-  &__headline-text {
+  &__headline-input {
     font-size: 12px;
     line-height: 12px;
     font-weight: 700;
+    color: $color-watermelon-red;
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    transition: color $transition-300;
+
+    &::placeholder {
+      color: $color-watermelon-red;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-indigo;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+  }
+
+  &__icon {
+    pointer-events: none;
+    width: 12px;
+    height: 12px;
   }
 
   &__name {
@@ -100,62 +127,62 @@
     }
   }
 
-&__icons {
-  display: flex;
-  gap: 16px;
-}
-
-&__btn {
-  cursor: pointer;
-  outline: none;
-  border: none;
-  padding: 9px;
-  background-color: $color-cultered;
-  border-radius: 50%;
-  display: flex;
-  transition: background-color $transition-300;
-
-  &:hover,
-  &:focus-visible {
-    background-color: $color-watermelon-red;
+  &__icons {
+    display: flex;
+    gap: 16px;
   }
-}
 
-&__icon {
-  flex-shrink: 0;
-  width: 14px;
-  height: 14px;
-}
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 9px;
+    background-color: $color-cultered;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color $transition-300;
 
-&__details {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 0 auto;
-  padding: 40px 0 0;
-}
+    &:hover,
+    &:focus-visible {
+      background-color: $color-watermelon-red;
+    }
+  }
 
-&__group {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__icon {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+  }
 
-&__subtitle {
-  font-size: 16px;
-  line-height: 16px;
-  margin: 0;
-}
+  &__details {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+  }
 
-&__row {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-&__btn-wrapper {
-  display: flex;
-  gap: 40px;
-}
+  &__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 40px;
+  }
 }

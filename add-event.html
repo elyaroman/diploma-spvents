@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-  <link rel="shortcut icon" href="favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <title>Страница личного кабинета</title>
 </head>
 
@@ -53,21 +54,25 @@
               <div class="add-event__main">
                 <div class="add-event__info">
                   <div class="add-event__top">
-                    <button class="add-event__headline" type="button" aria-label="Выбрать дату">
+                    <div class="add-event__headline">
                       <svg class="add-event__headline-icon" width="12" height="12" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-calendar"></use>
                       </svg>
-                      <span class="add-event__headline-text">Выбрать дату</span>
-                    </button>
-                    <button class="add-event__headline" type="button" aria-label="Выбрать место">
+                      <input class="add-event__headline-input" type="date" name="date" id="date"
+                        aria-label="Выбрать дату" required>
+                    </div>
+                    <div class="add-event__headline">
                       <svg class="add-event__headline-icon" width="12" height="12" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-map"></use>
                       </svg>
-                      <span class="add-event__headline-text">Выбрать место</span>
-                    </button>
+                      <input class="add-event__headline-input" type="text" name="address" id="address"
+                        placeholder="Выбрать место" required>
+                    </div>
                   </div>
-                  <input class="add-event__name" type="text" name="event-name" id="event-name" placeholder="Название мероприятия">
-                  <input class="add-event__description" type="text" name="event-description" id="event-description" placeholder="Короткое описание мероприятия">
+                  <input class="add-event__name" type="text" name="name" id="name"
+                    placeholder="Название мероприятия" required>
+                  <input class="add-event__description" type="text" name="description" id="description"
+                    placeholder="Короткое описание мероприятия" required>
                 </div>
                 <div class="add-event__icons">
                   <button class="add-event__btn" type="button" aria-label="Добавить фото профиля">
@@ -93,31 +98,31 @@
                 <h3 class="add-event__subtitle">ДЕТАЛИ МЕРОПРИЯТИЯ</h3>
                 <div class="add-event__row">
                   <div class="custom-input">
-                    <input class="custom-input__field" type="text" name="event-start" id="event-start"
+                    <input class="custom-input__field" type="text" name="time_start" id="time_start"
                       placeholder="Время начала">
-                    <label class="custom-input__label" for="event-start">Время начала</label>
+                    <label class="custom-input__label" for="time_start">Время начала</label>
                     <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-clock"></use>
                     </svg>
                   </div>
                   <div class="custom-input">
-                    <input class="custom-input__field" type="text" name="event-end" id="event-end"
+                    <input class="custom-input__field" type="text" name="time_end" id="time_end"
                       placeholder="Время окончания">
-                    <label class="custom-input__label" for="event-end">Время окончания</label>
+                    <label class="custom-input__label" for="time_end">Время окончания</label>
                     <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-clock"></use>
                     </svg>
                   </div>
-                  <div class="custom-input">
+                  <!-- <div class="custom-input">
                     <input class="custom-input__field" type="text" name="duration" id="duration"
                       placeholder="Длительность">
                     <label class="custom-input__label" for="duration">Длительность</label>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="add-event__row">
                 <div class="custom-select">
-                  <select class="custom-select__field" name="organizer" id="organizer">
+                  <select class="custom-select__field" name="id_organizer" id="id_organizer">
                     <option value="">Выберите организатора</option>
                     <option value="exibition">Выставка</option>
                     <option value="lection">Лекция</option>
@@ -126,9 +131,9 @@
                   </select>
                 </div>
                 <div class="custom-checkbox">
-                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="organizer-checkbox"
-                    id="organizer-checkbox">
-                  <label class="custom-checkbox__label" for="organizer-checkbox">Вы&nbsp;&mdash; организатор</label>
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="is_organizer"
+                    id="is_organizer">
+                  <label class="custom-checkbox__label" for="is_organizer">Вы&nbsp;&mdash; организатор</label>
                   <svg class="custom-checkbox__icon" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-tick"></use>
                   </svg>
@@ -136,8 +141,8 @@
               </div>
               <div class="add-event__row">
                 <div class="custom-select">
-                  <select class="custom-select__field" name="events-type" id="events-type">
-                    <option value="">Выберите тип мероприятия</option>
+                  <select class="custom-select__field" name="category" id="category">
+                    <option value="">Выберите категорию мероприятия</option>
                     <option value="exibition">Выставка</option>
                     <option value="lection">Лекция</option>
                     <option value="concert">Концерт</option>
@@ -145,19 +150,19 @@
                   </select>
                 </div>
                 <div class="custom-checkbox">
-                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="child-friendly"
-                    id="child-friendly">
-                  <label class="custom-checkbox__label" for="child-friendly">Можно с&nbsp;детьми</label>
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="is_child-friendly"
+                    id="is_child-friendly">
+                  <label class="custom-checkbox__label" for="is_child-friendly">Можно с&nbsp;детьми</label>
                   <svg class="custom-checkbox__icon" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-tick"></use>
                   </svg>
                 </div>
               </div>
               <div class="add-event__group">
-                <h3 class="add-event__subtitle">АДРЕС МЕРОПРИЯТИЯ</h3>
+                <h3 class="add-event__subtitle">КОММЕНТАРИЙ К МЕРОПРИЯТИЮ</h3>
                 <div class="custom-input">
-                  <input class="custom-input__field" type="text" name="event-address" id="event-address"
-                    placeholder="Введите адрес">
+                  <input class="custom-input__field" type="text" name="comment" id="comment"
+                    placeholder="Введите комментарий">
                 </div>
               </div>
               <div class="add-event__btn-wrapper">

@@ -311,14 +311,14 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1110,7 +1110,6 @@ textarea {
 }
 .add-event__top {
   display: flex;
-  gap: 32px;
 }
 .add-event__headline {
   cursor: pointer;
@@ -1119,6 +1118,7 @@ textarea {
   padding: 0;
   background-color: transparent;
   display: flex;
+  align-items: center;
   gap: 4px;
   color: #b63b4f;
   transition: color ease-in 0.3s;
@@ -1126,10 +1126,30 @@ textarea {
 .add-event__headline:hover, .add-event__headline:focus-visible {
   color: #242565;
 }
-.add-event__headline-text {
+.add-event__headline-input {
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
+  color: #b63b4f;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  transition: color ease-in 0.3s;
+}
+.add-event__headline-input::placeholder {
+  color: #b63b4f;
+}
+.add-event__headline-input:hover, .add-event__headline-input:focus-visible {
+  color: #242565;
+}
+.add-event__headline-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.add-event__icon {
+  pointer-events: none;
+  width: 12px;
+  height: 12px;
 }
 .add-event__name {
   background-color: transparent;
